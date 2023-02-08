@@ -23,7 +23,7 @@ public class Aplicacao {
         imprimirEstatisticas(resultados);
 
         // imprimir tabela ordenada
-        imprimirTabela(resultados.getTabela());
+        //imprimirTabela(resultados.getTabela());
 
     }
 
@@ -39,9 +39,9 @@ public class Aplicacao {
         System.out.println("Estatisticas (Placar mais repetido) - "
                 + placarMaisRepetido.getKey() + " (" +placarMaisRepetido.getValue() + " jogo(s))");
 
-        Map.Entry<Resultado, Long> placarMenosRepetido = brasileirao.getPlacarMenosRepetido();
+      Map.Entry<Resultado, Long> placarMenosRepetido = brasileirao.getPlacarMenosRepetido();
 
-        System.out.println("Estatisticas (Placar menos repetido) - "
+      System.out.println("Estatisticas (Placar menos repetido) - "
                 + placarMenosRepetido.getKey() + " (" +placarMenosRepetido.getValue() + " jogo(s))");
 
         Long jogosCom3OuMaisGols = brasileirao.getTotalJogosCom3OuMaisGols();
